@@ -1,0 +1,22 @@
+#pragma once
+
+#include <iostream>
+using namespace std;
+namespace MyLib{
+
+    int ReadNumber()
+    {
+    int Number;
+    cout << "Please enter a number?" << endl;
+    cin >> Number;
+    while (cin.fail())
+    {
+    // user didn't input a number
+    cin.clear();
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cout << "Invalid Number, Enter a valid one:" << endl;
+    cin >> Number;
+    }
+}
+
+}

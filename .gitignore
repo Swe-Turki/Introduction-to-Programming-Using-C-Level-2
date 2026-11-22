@@ -1,0 +1,9 @@
+# Executable files without extensions
+Main/Source Files/Lesson[0-9]*
+!Main/Source Files/Lesson[0-9]*.cpp
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
